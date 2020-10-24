@@ -6,10 +6,10 @@ creditcard = data.table::fread('unzip -p data-raw/creditcard.csv.zip')
 creditcard$Class = factor(ifelse(creditcard$Class == 0, "genuine", "fraud"))
 
 # create remote readable compressed file
-data.table::fwrite(creditcard, file = "data/creditcard.csv.gz")
+data.table::fwrite(creditcard, file = "data/cc.csv.gz")
 
 # read from gz file with modified response
-cc = data.table::fread("data/creditcard.csv.gz")
+cc = data.table::fread("data/cc.csv.gz")
 
 # verify data
 nrow(creditcard) == 284807

@@ -18,7 +18,7 @@ knitr::opts_chunk$set(echo = FALSE, fig.align = 'center')
 
 ```{r read-full-data}
 # read full data
-cc = data.table::fread("data/creditcard.csv.gz")
+cc = data.table::fread("data/cc.csv.gz")
 ```
 
 ```{r read-subset-data}
