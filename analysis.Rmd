@@ -16,6 +16,11 @@ knitr::opts_chunk$set(echo = FALSE, fig.align = 'center')
 # load packages
 ```
 
+```{r make-data, warning = FALSE, message = FALSE}
+# read data and subset
+source("make-data.R")
+```
+
 ```{r read-full-data, warning = FALSE, message = FALSE}
 # read full data
 cc = data.table::fread("data/cc.csv.gz")

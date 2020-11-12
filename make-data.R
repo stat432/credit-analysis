@@ -5,6 +5,11 @@ creditcard = data.table::fread('unzip -p data-raw/creditcard.csv.zip')
 # make response a factor with names instead of numbers
 creditcard$Class = factor(ifelse(creditcard$Class == 0, "genuine", "fraud"))
 
+# create data directory
+if (!dir.exists("data")) {
+  dir.create("data")
+}
+
 # create remote readable compressed file
 data.table::fwrite(creditcard, file = "data/cc.csv.gz")
 

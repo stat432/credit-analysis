@@ -8,9 +8,12 @@ This repository contains the files necessary to get started with the Credit Card
 - `make-data.R`: The R script used to scrape and wrangle the data.
 - `analysis.Rmd`: A **template** R Markdown file to be used for reporting the results of your analysis.
 - `data-raw/creditcard.csv.zip`: The original data downloaded from Kaggle and zipped.
+- `credit-analysis.Rproj`: An RStudio project file.
+
+Additional files are created by running the `make-data.R` script.
+
 - `data/cc-sub.csv`: The subset of the data as created by the `make-data.R` script.
 - `data/cc.csv.gz`: The "full" data as created by the `make-data.R` script.
-- `credit-analysis.Rproj`: An RStudio project file.
 
 ## Source and Documentation
 
