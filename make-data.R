@@ -14,6 +14,7 @@ cc = data.table::fread("data/cc.csv.gz")
 # verify data
 nrow(creditcard) == 284807
 nrow(cc) == 284807
+nrow(cc) == nrow(creditcard)
 
 # create data subset
 set.seed(42)
@@ -23,3 +24,5 @@ cc_sub = cc[sub_idx, ]
 # write subset to disk
 data.table::fwrite(cc_sub, "data/cc-sub.csv")
 
+# clean up
+rm(creditcard, cc, sub_idx, cc_sub)

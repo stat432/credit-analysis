@@ -16,12 +16,12 @@ knitr::opts_chunk$set(echo = FALSE, fig.align = 'center')
 # load packages
 ```
 
-```{r read-full-data}
+```{r read-full-data, warning = FALSE, message = FALSE}
 # read full data
 cc = data.table::fread("data/cc.csv.gz")
 ```
 
-```{r read-subset-data}
+```{r read-subset-data, warning = FALSE, message = FALSE}
 # read subset of data
 cc_sub = data.table::fread("data/cc-sub.csv")
 ```
@@ -36,22 +36,36 @@ cc_sub = data.table::fread("data/cc-sub.csv")
 
 ## Introduction
 
+Write your introduction here.
+
 ***
 
 ## Methods
 
+Describe the methods used in this section.
+
 ### Data
 
+Specifically describe the data and how it is used here.
+
 ### Modeling
+
+Discuss your modeling and validation strategy here.
 
 ***
 
 ## Results
 
+State your results here.
+
 ***
 
 ## Discussion
 
+Discuss your results here.
+
 ***
 
 ## Appendix
+
+Place potential additional information here.
